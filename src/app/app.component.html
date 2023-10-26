@@ -1,0 +1,7 @@
+<p>Nom : <input [(ngModel)]="nom" /></p>
+<p>Prénom : <input [(ngModel)]="prenom" /></p>
+<p>Age : <input [(ngModel)]="age" /></p>
+<p>Ville : {{ ville }}</p>
+
+<button (click)="send()">Envoyer</button>
+<app-user [c]="client" (change)="villeChange($event)"></app-user>
